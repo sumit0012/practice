@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "b" {
-  bucket = "sam199712056"
+  bucket = "sam199712056002"
   acl    = "private"
 
   versioning {
