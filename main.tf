@@ -6,7 +6,7 @@ secret_key = "/srtIDnb2YtvlA2Z7oqd9z0N5uGid3TqkNa6qbzq"
 
 resource "aws_instance" "one" {
 ami = "ami-0dfcb1ef8550277af"
-instance_type = "t2.medium"
+instance_type = "t2.micro"
   key_name        = "terraproject"
   vpc_security_group_ids = [aws_security_group.three.id]
   availability_zone = "us-east-1a"
@@ -25,7 +25,7 @@ Name = "zepto-01"
 
 resource "aws_instance" "two" {
 ami = "ami-0dfcb1ef8550277af"
-instance_type = "t2.medium"
+instance_type = "t2.micro"
   key_name        = "terraproject"
   vpc_security_group_ids = [aws_security_group.three.id]
   availability_zone = "us-east-1b"
