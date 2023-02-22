@@ -1,7 +1,7 @@
 provider "aws" {
 region = "us-east-1"
-access_key = "AKIAZD3X7HF7TEH7IZHI"
-secret_key = "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"
+access_key = ""
+secret_key = ""
 }
 
 resource "aws_instance" "one" {
@@ -16,7 +16,7 @@ sudo -i
 yum install httpd -y
 systemctl start httpd
 chkconfig httpd on
-echo "hai all this is my swiggy application created by terraform infrastructurte by raham sir server-1" > /var/www/html/index.html
+echo "Hiii all this is my Zepto application created by terraform infrastructurte by SUMIT server-1" > /var/www/html/index.html
 EOF
 tags = {
 Name = "zepto-01"
@@ -35,7 +35,7 @@ sudo -i
 yum install httpd -y
 systemctl start httpd
 chkconfig httpd on
-echo "hai all this is my swiggy application created by terraform infrastructurte by raham sir server-2" > /var/www/html/index.html
+echo "Hiii all this is my Zepto application created by terraform infrastructurte by Sumit server-2" > /var/www/html/index.html
 EOF
 tags = {
 Name = "zepto-02"
